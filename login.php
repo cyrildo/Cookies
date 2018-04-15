@@ -8,9 +8,8 @@ if (!empty($_POST['loginname'])) {
 // Ending a session in 30 minutes from the starting time.
     $_SESSION['expire'] = $_SESSION['start'] + (30 * 60);
     header('Location: index.php');
-} else {
-    session_destroy();
 }
+
 
 $_SESSION['username'] = $_POST['loginname'];
 

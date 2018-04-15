@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 
 require 'inc/head.php'; ?>
 <section class="cookies container-fluid">

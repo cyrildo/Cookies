@@ -75,7 +75,7 @@ require 'inc/head.php'; ?>
                 </table>
                 </div>
                 <?php
-            }
+            } else { echo "<h1>Your cart is empty ... </h1>"; }
         } else { echo "<h1>You must log in to order our cookies, please connect !!</h1>";
         }
         ?>

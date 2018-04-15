@@ -10,9 +10,9 @@ if (!empty($_POST['loginname'])) {
     header('Location: index.php');
 }
 
-
-$_SESSION['username'] = $_POST['loginname'];
-
+if (isset($_POST['loginname'])) {
+    $_SESSION['username'] = $_POST['loginname'];
+}
 
 
 require 'inc/head.php'; ?>
